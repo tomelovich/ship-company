@@ -180,7 +180,7 @@ header {
     margin-bottom: 8rem;
 }
 
-.news-header h1 {
+.news-header h2 {
     font-size: 3.6rem;
 }
 
@@ -252,6 +252,103 @@ header {
     top: 18rem;
     left: 0;
 }
+
+.history {
+    padding: 0 var(--edge-distance);
+    background: #133D8D;
+    color:white;
+    margin-bottom: 8rem;
+}
+.history h2 {
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    padding-top: 8rem;
+}
+.history-company {
+    display: flex;
+    column-gap: 12rem;
+}
+.history p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 140%; 
+    width: 53rem;
+}
+.scheme img {
+    height: 30rem;
+    margin-bottom: 1.2rem;
+}
+.scheme ul {
+    margin: 0 1.5rem 4.5rem 0;
+    list-style-type: square;
+}
+
+.scheme li {
+    font-size: 13px;
+    font-weight: 550;
+    line-height: 140%;
+}
+.publications {
+    margin: 0 var(--edge-distance) 10rem;
+}
+
+.publications-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+}
+
+.publications-header h2 {
+    font-size: 3.6rem;
+    text-transform: uppercase;
+}
+
+.publications-header a {
+    font-weight: 600;
+    color: #133D8D;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.blocks-publications {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-publications {
+    width: 23rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.block-publications img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.6rem;
+}
+.block-publications p{
+    color: #333333;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 1.6rem;
+}
+.block-publications b {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+
+}
+.block-publications a {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 140%;
+    color:#133D8D;
+}
+
 
 
 
