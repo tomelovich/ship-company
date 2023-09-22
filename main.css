@@ -1,0 +1,266 @@
+@import url(./reset.css);
+:root {
+    --edge-distance: 16%;
+}
+* {
+    font-family: HelveticaNeueCyr;
+    transition: all 0.5s ease-out;
+}
+html {
+    font-size: 10px;
+}
+header {
+    margin: 0 var(--edge-distance);
+    color: white;
+    padding-bottom: 10rem;
+}
+.top-header{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .2rem solid rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: relative; /* Добавляем относительное позиционирование */
+    z-index: 2;
+}
+.top-header a{
+    cursor: pointer;
+}
+.top-header .fa-search {
+    font-size: 2.5rem;
+    color: white;
+}
+.contact-information {
+    display: flex;
+    column-gap: 5rem;
+}
+.bottom-header {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative; /* Добавляем относительное позиционирование */
+    z-index: 2;
+}
+.bottom-header a {
+    font-size: 1.4rem;
+    color: white;
+    text-transform: uppercase;
+}
+.bottom-header a:hover {
+    border-bottom: .2rem solid white;
+}
+.swiper-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.swiper-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 69.5rem;
+    background-color: rgba(19, 61, 141, 0.75);
+    z-index: 1; 
+}
+.ship {
+    overflow: hidden;
+}
+
+.ship img {
+    width: initial;
+    width: 100%;
+    max-height: 69.5rem;
+}
+
+.button-prev, .button-next  {
+   font-size: 2.4rem;
+    background-color: #133D8D;
+    top: 80%;
+    padding: 1.5rem 2.5rem;
+    cursor: pointer;
+}
+.button-prev {
+    text-align: left;
+    position: absolute;
+    left: var(--edge-distance);
+    z-index: 2; 
+}
+.button-next {
+    text-align: left;
+    position: absolute;
+    left: 32rem;
+    z-index: 2; 
+}
+
+.ship-information {
+    text-align: left;
+    position: absolute;
+    top: 25%;
+    left: var(--edge-distance);
+    color: white;
+    max-width: 36%;
+    z-index: 2; 
+}
+
+.ship-information h2 {
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    line-height: 140%;
+    font-weight: lighter;
+    margin-bottom: 3rem;
+}
+
+.ship-information p {
+    border-left: .3rem solid white;
+    line-height: 140%;
+    margin-bottom: 5rem;
+    padding-left: 3rem;
+}
+
+.ship-information a {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 1.5rem 3rem;
+    background-color: #BD0007;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.ship-information a:hover {
+    background-color: transparent;
+}
+.ship-characteristics {
+    text-align: left;
+    position: absolute;
+    top: 60%;
+    right: var(--edge-distance);
+    color: white;
+    padding: 2rem;
+    z-index: 2; 
+    background-color: rgba(51, 51, 51, 0.30);
+}
+.characteristics {
+    display: flex;
+    align-items: center;
+    column-gap: 7.6rem;
+}
+.ship-characteristics h3 {
+    font-weight: 600;
+}
+.ship-characteristics table {
+    margin-top: 2rem; /* Регулируйте отступ таблицы по вашему усмотрению */
+    width: 100%;
+    border-collapse: collapse; /* Убираем внешние границы таблицы */
+}
+
+.ship-characteristics th, .ship-characteristics td {
+    padding: .5rem; /* Регулируйте отступы внутри ячеек по вашему усмотрению */
+    text-align: left;
+    font-size: 1.2rem;
+}
+.characteristics img {
+    height: 4rem;
+}
+
+.news {
+    margin: 55rem var(--edge-distance) 10rem;
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+}
+
+.news-header h1 {
+    font-size: 3.6rem;
+}
+
+.news-header a {
+    font-weight: 600;
+    color: #133D8D;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.blocks-news {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-news {
+    width: 23rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.block-news img {
+    width: 100%;
+    height: auto;
+}
+
+.block-news::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 61, 141, 0.75);
+    opacity: 1;
+}
+
+.block-news::after {
+    content: "29 декабря 2022 г.";
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    width: auto;
+    height: auto;
+    background-color: red;
+    opacity: 1;
+    font-size: 1.1rem;
+    color: white;
+    padding: .5rem;
+}
+.block-news p {
+    position: absolute;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    opacity: 1;
+    top: 13rem;
+}
+.block-news span {
+    position: absolute;
+    width: 100%;
+    padding: 1rem;
+    color: rgb(199, 199, 199);
+    text-align: center;
+    font-size: 1.1rem;
+    opacity: 1;
+    top: 18rem;
+    left: 0;
+}
+
+
+
+
+
+
+/* ---------------------- шрифт---------------------- */
+@font-face {
+    
+    font-family: "HelveticaNeueCyr"; 
+    src: url("./fonts/helveticaneuecyr_roman.otf") format("truetype"); 
+    } 
